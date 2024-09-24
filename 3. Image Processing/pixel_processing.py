@@ -11,13 +11,13 @@ def change_brightness(image_path, brightness_level:int):
         brightness_level -- level of brightness for the new image
     """
     img = cv2.imread(image_path)
-    R_shape, G_shape, B_shape = img.shape 
+    height, width, channels = img.shape 
     new_img = np.zeros_like(img)
 
     # looping across all the pixels for all channels
-    for i in range(R_shape):
-        for j in range(G_shape):
-            for k in range(B_shape):
+    for i in range(height):
+        for j in range(width):
+            for k in range(channels):
 
                 # new pixel value
                 pixel = img[i][j][k] + brightness_level
@@ -38,13 +38,13 @@ def change_contrast(image_path, contrast_level:int):
         brightness_level -- level of brightness for the new image
     """
     img = cv2.imread(image_path)
-    R_shape, G_shape, B_shape = img.shape 
+    height, width, channels = img.shape 
     new_img = np.zeros_like(img)
 
     # looping across all the pixels for all channels
-    for i in range(R_shape):
-        for j in range(G_shape):
-            for k in range(B_shape):
+    for i in range(height):
+        for j in range(width):
+            for k in range(channels):
 
                 # new pixel value
                 pixel = img[i][j][k] * contrast_level
