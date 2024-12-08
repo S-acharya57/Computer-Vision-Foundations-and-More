@@ -56,14 +56,14 @@ def convolve_vectorized(original_image, kernel):
     return new_img
 
 
-image = cv2.imread('city.png')
+# image = cv2.imread('city.png')
 
-print(image.shape)
+# print(image.shape)
 
-# sobel filter 
-kernel = np.array([[1, 0, -1],
-                  [2, 0, -2],
-                  [1, 0, -1]])
+# # sobel filter 
+# kernel = np.array([[1, 0, -1],
+#                   [2, 0, -2],
+#                   [1, 0, -1]])
 
-convolved_image_vectorized = convolve_vectorized(image, kernel)
-print(convolved_image_vectorized.shape)
+# convolved_image_vectorized = convolve_vectorized(image, kernel)
+# print(convolved_image_vectorized.shape)

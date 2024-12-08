@@ -73,5 +73,3 @@ iv. Laplacian Filter:
                   [1, -4, 1],
                   [0, 1, 0]])`
 ![alt text](conv_output/image-6.png)
-
-#### 4. Non-Linear Image Filters
