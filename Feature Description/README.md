@@ -11,3 +11,5 @@
 4. Obtain determinant and trace of the matrices 
 5. Get Harris Response as: $R = det - (k * (trace**2))$
 
+The result is obtained as:
+![](harris_chess_scratch.png)
